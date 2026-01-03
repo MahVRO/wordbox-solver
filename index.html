@@ -1,0 +1,42 @@
+<div id="app">
+  <h1>Wordbox Solver</h1>
+
+  <!-- Controls -->
+  <div class="controls">
+    <select id="size">
+      <option value="4">4 × 4</option>
+      <option value="5">5 × 5</option>
+    </select>
+
+    <button id="newGrid">New grid</button>
+    <button id="randomize">Randomize</button>
+  </div>
+
+  <!-- Options -->
+  <div class="options">
+  <label class="toggle">
+    <input type="checkbox" id="singleLetter" checked>
+    <span>Single letter</span>
+  </label>
+
+  <label class="toggle">
+    <input type="checkbox" id="bonusToggle">
+    <span>Bonus tile</span>
+  </label>
+</div>
+
+  <!-- Grid -->
+  <div id="grid-wrapper">
+    <svg id="lines"></svg>
+    <div id="grid"></div>
+  </div>
+
+  <!-- Solve -->
+  <button id="solve">Solve</button>
+
+  <!-- Results -->
+  <div id="results">
+    <h2>Results</h2>
+    <ul id="output"></ul>
+  </div>
+</div>
